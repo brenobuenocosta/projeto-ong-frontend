@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONG - Plataforma</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+    <header>
+        <h1 id="page-title">Nome da ONG</h1>
+        <nav>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle-checkbox">
+            <label for="menu-toggle" class="menu-toggle-label" aria-label="Abrir menu">
+                <span></span><span></span><span></span>
+            </label>
+            <ul class="nav-list">
+                <li><a href="#/inicio">Início</a></li>
+                <li class="has-dropdown">
+                    <a href="#/projetos">Projetos</a>
+                    <ul class="dropdown">
+                        <li><a href="#/projetos" data-scroll="doacao">Doação</a></li>
+                        <li><a href="#/projetos" data-scroll="voluntariado">Voluntariado</a></li>
+                    </ul>
+                </li>
+                <li><a href="#/cadastro">Cadastro</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- É AQUI que o JavaScript injeta o conteúdo de cada "página" -->
+    <main id="app">
+        <p>Carregando...</p>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Nome da ONG. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- IMask: biblioteca externa para máscaras de campo (CPF, telefone, CEP, estado) -->
+    <script src="https://cdn.jsdelivr.net/npm/imask@7.6.1/dist/imask.min.js"></script>
+
+    <!-- Day.js: biblioteca leve (~2KB) para formatação de datas, carregada
+         via CDN ANTES do nosso script principal, para garantir que o objeto
+         global "dayjs" já exista quando main.js for executado -->
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+
+    <!-- type="module" permite usar import/export entre os arquivos JS -->
+    <script type="module" src="../js/main.js"></script>
+</body>
+</html>

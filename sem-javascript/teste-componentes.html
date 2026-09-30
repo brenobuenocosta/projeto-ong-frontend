@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste - Componentes de Feedback</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Teste de Componentes</h1>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Badges</h2>
+            <p>
+                <span class="badge badge-primary">Institucional</span>
+                <span class="badge badge-success">Ativo</span>
+                <span class="badge badge-warning">Urgente</span>
+                <span class="badge badge-error">Encerrado</span>
+            </p>
+        </section>
+
+        <section>
+            <h2>Alertas</h2>
+            <div class="alert alert-success">Cadastro realizado com sucesso!</div>
+            <div class="alert alert-error">Não foi possível enviar o formulário. Verifique os campos.</div>
+            <div class="alert alert-warning">Alguns campos estão quase no limite de caracteres.</div>
+            <div class="alert alert-info">Seus dados são usados apenas para contato da ONG.</div>
+        </section>
+
+        <section>
+            <h2>Modal</h2>
+            <input type="checkbox" id="modal-toggle" class="modal-toggle" style="display:none;">
+            <label for="modal-toggle" class="modal-close">Abrir modal de exemplo</label>
+
+            <div class="modal-overlay">
+                <div class="modal-box">
+                    <h3>Confirmação de cadastro</h3>
+                    <p>Seus dados foram enviados com sucesso. Em breve entraremos em contato.</p>
+                    <label for="modal-toggle" class="modal-close">Fechar</label>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Toast</h2>
+            <p>Exemplo fixo no canto inferior direito da tela (role a página se necessário):</p>
+            <div class="toast toast-success">Voluntário cadastrado com sucesso.</div>
+        </section>
+
+    </main>
+
+</body>
+</html>
